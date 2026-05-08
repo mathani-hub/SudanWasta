@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudanWasta | Local Waste, Sustainable Building</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..700&display=swap');
+        
+        :root {
+            --primary: #1e40af; /* Blue 800 */
+            --accent: #0ea5e9;  /* Sky 500 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .nav-logo {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-pattern {
+            background-color: #1e3a8a;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="nav-logo text-2xl font-bold text-blue-900 flex items-center gap-2">
+                <i data-lucide="recycle" class="text-blue-600"></i>
+                SudanWasta
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wide">
+                <a href="#about" class="hover:text-blue-700 transition">About</a>
+                <a href="#how-it-works" class="hover:text-blue-700 transition">How it Works</a>
+                <a href="#product" class="hover:text-blue-700 transition">Products</a>
+                <a href="#process" class="hover:text-blue-700 transition">Process Flow</a>
+            </nav>
+            
+            <button class="md:hidden text-blue-900"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero-pattern pt-40 pb-32 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-400/20 border border-blue-400/30 text-blue-200 text-sm font-medium">
+                Now Launching in Khartoum North
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
+                A Cleaner Neighborhood, <br><span class="text-sky-400">A Stronger Community.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100/80 mb-10 max-w-2xl mx-auto">
+                We provide decentralized waste collection and turn local plastic into sustainable building materials. Building a circular economy for Sudan.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. THE PROBLEM -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-3/5">
+                    <h2 class="text-4xl font-bold text-slate-900 mb-6 leading-tight">Decentralized Waste Management for <span class="text-blue-600">Modern Communities.</span></h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        SudanWasta addresses the lack of structured waste collection in low-resource urban and peri-urban areas. We introduce a community-based system that collects, sorts, and converts local waste into valuable, high-utility products.
+                    </p>
+                </div>
+                <div class="md:w-2/5 grid gap-6">
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-blue-50 transition">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">Systemic Failure</h4>
+                            <p class="text-slate-500 text-sm">Lack of consistent, formal urban waste collection services in local neighborhoods.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-blue-50 transition">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">Health Hazards</h4>
+                            <p class="text-slate-500 text-sm">Environmental risks from plastic burning and drainage clogging, leading to disease.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-blue-50 transition">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                            <i data-lucide="hard-hat"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-slate-800">Resource Scarcity</h4>
+                            <p class="text-slate-500 text-sm">High costs of imported or traditional building materials for local growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS -->
+    <section id="how-it-works" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Circular Process</h2>
+                <p class="text-slate-600">From your doorstep back into your walls.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="step-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-5xl font-black text-blue-50 block mb-4">01</span>
+                    <i data-lucide="truck" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Collection</h3>
+                    <p class="text-slate-500 text-sm">Low-cost, scheduled digital-tracked pickups from your doorstep.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-5xl font-black text-blue-50 block mb-4">02</span>
+                    <i data-lucide="filter" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sorting</h3>
+                    <p class="text-slate-500 text-sm">Manual segregation and cleaning at our local neighborhood community hub.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-5xl font-black text-blue-50 block mb-4">03</span>
+                    <i data-lucide="factory" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Conversion</h3>
+                    <p class="text-slate-500 text-sm">Thermal upcycling of plastics into durable, interlocking construction tiles.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="step-card bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <span class="text-5xl font-black text-blue-50 block mb-4">04</span>
+                    <i data-lucide="trending-up" class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Impact</h3>
+                    <p class="text-slate-500 text-sm">Reducing local pollution while creating sustainable green jobs for youth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. THE PRODUCT -->
+    <section id="product" class="py-24 bg-blue-900 text-white overflow-hidden relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-full">
+                    <h2 class="text-4xl font-bold mb-6 text-center lg:text-left">Eco-Bricks: <br>Building the Future.</h2>
+                    <p class="text-blue-100/70 text-lg mb-12 text-center lg:text-left max-w-2xl">Our proprietary tiles are engineered to withstand the unique climate of Sudan while offering superior environmental benefits.</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-blue-800/40 p-8 rounded-xl border border-blue-700">
+                            <div class="flex items-center gap-4 mb-4 font-bold text-sky-400">
+                                <i data-lucide="shield-check" class="w-8 h-8"></i> Durability
+                            </div>
+                            <p class="text-sm leading-relaxed">High-compression strength optimized for non-load-bearing walls and pavement infrastructure.</p>
+                        </div>
+                        <div class="bg-blue-800/40 p-8 rounded-xl border border-blue-700">
+                            <div class="flex items-center gap-4 mb-4 font-bold text-sky-400">
+                                <i data-lucide="sun" class="w-8 h-8"></i> Resilience
+                            </div>
+                            <p class="text-sm leading-relaxed">Water-resistant and UV-protected to prevent degradation in extreme Saharan heat.</p>
+                        </div>
+                        <div class="bg-blue-800/40 p-8 rounded-xl border border-blue-700">
+                            <div class="flex items-center gap-4 mb-4 font-bold text-sky-400">
+                                <i data-lucide="leaf" class="w-8 h-8"></i> Sustainability
+                            </div>
+                            <p class="text-sm leading-relaxed">Made from 100% locally collected post-consumer and industrial plastic waste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PROCESS FLOW SECTION -->
+    <section id="process" class="py-24 bg-blue-50 text-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Process Flow</h2>
+                <p class="text-slate-600">The lifecycle of SudanWasta's decentralized system.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto relative border-l-2 border-blue-200 ml-4 md:ml-auto">
+                <!-- Step 1 -->
+                <div class="mb-12 relative pl-10">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                    <div class="bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900">Waste Collection</h4>
+                        <p class="text-slate-600 mt-2 leading-relaxed text-sm">
+                            Households and small businesses subscribe to a low-cost service. Waste is collected using carts or small vehicles by dedicated local operators.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="mb-12 relative pl-10">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-400 border-4 border-white shadow-sm"></div>
+                    <div class="bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900">Sorting & Segregation</h4>
+                        <p class="text-slate-600 mt-2 leading-relaxed text-sm">
+                            Waste is transported to a small local hub where it is manually sorted into organic, plastic, and other recyclable categories.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="mb-12 relative pl-10">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-400 border-4 border-white shadow-sm"></div>
+                    <div class="bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900">Recycling & Conversion</h4>
+                        <p class="text-slate-600 mt-2 leading-relaxed text-sm">
+                            Plastics are processed into durable products such as bricks or tiles. Organic waste is slated for conversion into compost in a future phase.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="mb-12 relative pl-10">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-400 border-4 border-white shadow-sm"></div>
+                    <div class="bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                        <h4 class="text-xl font-bold text-blue-900">Sales & Distribution</h4>
+                        <p class="text-slate-600 mt-2 leading-relaxed text-sm">
+                            Recycled products are distributed and sold to local construction markets or community partners.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative pl-10">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                    <div class="bg-blue-100/50 p-6 rounded-xl border border-blue-200 border-dashed">
+                        <h4 class="text-xl font-bold text-blue-900 flex items-center gap-2">
+                            <i data-lucide="refresh-cw" class="w-5 h-5"></i> Continuous Loop
+                        </h4>
+                        <p class="text-slate-600 mt-2 leading-relaxed text-sm">
+                            The system creates a sustainable circular economy where waste is no longer discarded but transformed into a vital local resource.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 border-t border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                <div>
+                    <a href="#" class="text-xl font-bold text-blue-900 flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <i data-lucide="recycle" class="text-blue-600"></i> SudanWasta
+                    </a>
+                    <p class="text-slate-500 text-sm">Built with ❤️ in Sudan.</p>
+                </div>
+                
+                <div class="text-slate-400 text-xs">
+                    &copy; 2025 SudanWasta. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
